@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Is It a Holiday?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        select {
+            width: 80%;
+            padding: 10px;
+            font-size: 1rem;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            transition: 0.3s;
+        }
+        select:focus {
+            border-color: #ff6b6b;
+            outline: none;
+        }
+        button {
+            background: #ff6b6b;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        button:hover {
+            background: #e55d5d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Is it a holiday in</h1>
+        <form id="holidayForm">
+            <select id="country" required>
+                <option value="" disabled selected>Select a country</option>
+                <option value="https://isitaholiday.github.io/holiday-in-australia/">Australia</option>
+                <option value="https://isitaholiday.github.io/holiday-in-germany/">Germany</option>
+            </select>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('holidayForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const selectedCountry = document.getElementById('country').value;
+            if (selectedCountry) {
+                window.location.href = selectedCountry;
+            } else {
+                alert('Please select a country.');
+            }
+        });
+    </script>
+</body>
+</html>
