@@ -27,6 +27,12 @@
             color: #333;
             margin-bottom: 20px;
         }
+        label {
+            display: block;
+            font-size: 1rem;
+            margin-bottom: 10px;
+            color: #555;
+        }
         select {
             width: 80%;
             padding: 10px;
@@ -53,13 +59,18 @@
         button:hover {
             background: #e55d5d;
         }
+        .hit-counter {
+            margin-top: 20px;
+            font-size: 0.9rem;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Is it a holiday in</h1>
         <form id="holidayForm">
-            <select id="country" required>
+            <label for="country">Choose a country:</label>
+            <select id="country" aria-label="Select a country" required>
                 <option value="" disabled selected>Select a country</option>
                 <option value="https://isitaholiday.github.io/holiday-in-australia/">Australia</option>
                 <option value="https://isitaholiday.github.io/holiday-in-germany/">Germany</option>
@@ -67,6 +78,14 @@
             <br>
             <button type="submit">Submit</button>
         </form>
+        <div class="hit-counter">
+            <!-- hitwebcounter Code START -->
+            <a href="https://www.hitwebcounter.com" target="_blank">
+                <img src="https://hitwebcounter.com/counter/counter.php?page=17654289&style=0001&nbdigits=6&type=page&initCount=122" 
+                     title="Total Visits" alt="Visit counter For Is It a Holiday?" border="0" />
+            </a>
+            <!-- hitwebcounter Code END -->
+        </div>
     </div>
 
     <script>
@@ -80,9 +99,5 @@
             }
         });
     </script>
-
-    <!-- hitwebcounter Code START -->
-<a href="https://www.hitwebcounter.com" target="_blank">
-<img src="https://hitwebcounter.com/counter/counter.php?page=17654289&style=0001&nbdigits=6&type=page&initCount=122" title="Total Visits" Alt="Visit counter For Is It a Holiday?"   border="0" /></a>                       
 </body>
 </html>
