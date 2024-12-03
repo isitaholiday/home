@@ -2,7 +2,9 @@
 
 Currently supported countries are:
 
+- Pakistan
 - Georgia
+- UAE
 - Ireland
 - Germany
 - Belgium
