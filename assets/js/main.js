@@ -39,11 +39,11 @@ getHolidays(url)
 // Array of objects for supported countries
 const supportedCountries = [
   {
-    isoCode: 'ge',
-    country: 'Georgia'
-  },  {
     isoCode: 'pk',
     country: 'Pakistan'
+  },  {
+    isoCode: 'ge',
+    country: 'Georgia'
   },
     {
     isoCode: 'ae',
