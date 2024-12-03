@@ -41,6 +41,17 @@ const supportedCountries = [
   {
     isoCode: 'ge',
     country: 'Georgia'
+  },  {
+    isoCode: 'pk',
+    country: 'Pakistan'
+  },
+    {
+    isoCode: 'ae',
+    country: 'UAE'
+  },
+    {
+    isoCode: 'au',
+    country: 'Australia'
   },
   {
     isoCode: 'ie',
